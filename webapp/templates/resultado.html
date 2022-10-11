@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block body %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Resultado da Previsão</h1>
+        <hr class="my-4">
+        <p>Previsão: {{ predict }}</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="{% url 'webapp:home-view' %}" role="button">Fazer Outra Previsão</a>
+        </p>
+    </div>
+</div>
+
+{% endblock body %}
